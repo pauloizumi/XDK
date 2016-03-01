@@ -1,0 +1,75 @@
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registro</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+   
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
+        /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+    </style>
+    
+    <!-- Biblioteca JQuery Mobile -->
+    <link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="jquery.mobile-1.4.5/jquery-2.1.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/funcao.js"></script>
+   
+</head>
+
+
+<body>
+    
+        <!-- PAGE -->
+    <div data-role="page" id="pagina1">    
+
+        <!-- HEADER -->
+        <div data-role="header">    
+            <h1>Registros</h1>
+        <!-- Fim HEADER -->
+        </div>
+    <!-- MAIN -->
+        <div data-role="main" class="ui-content">        
+
+            <label>Nome</label>
+            <input id="nome" type="text" name="nome" /><br>
+
+            <label>Sobrenome</label>
+            <input id="sobrenome" type="text" name="sobrenome" />
+            <button id="inclusao">Incluir</button>
+            <HR>
+            <a href="#pagina2" class="ui-btn ui-btn-corner-all">Visualizar Cadastros</a>    
+
+        </div>    
+         <!-- Fim MAIN -->   
+
+    </div>
+    <!-- Fim de PAGE -->    
+
+    <!-- PAGE 2 -->
+    <div data-role="page" id="pagina2">   
+        <!-- HEADER 2 -->
+        <div data-role="header">
+            <a href="#pagina1" data-rel="back" class="ui-btn-left ui-btn  ui-btn-icon-notext ui-corner-all ui-icon-back">Voltar</a>   
+
+        <h1>Listar Usuário</h1>
+        </div>
+    <!-- Fim HEADER 2 -->
+
+    <!-- MAIN 2 -->    
+        <div data-role="main" class="ui-content">     
+            <p id="listarusuario"></p>    
+        </div>    
+    </div>
+    <!-- Fim PAGE 2-->   
+</body>
+</html>
